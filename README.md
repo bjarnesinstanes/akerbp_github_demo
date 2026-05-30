@@ -1,4 +1,4 @@
-# Aker BP – AI-Ready Data Product Demo (GitHub-style Portfolio)
+# AI-Ready Data Product Demo (GitHub-style Portfolio)
 
 **Purpose:** An anonymised, representative portfolio demo showing how a governed industrial data product can be designed for AI consumption.
 
