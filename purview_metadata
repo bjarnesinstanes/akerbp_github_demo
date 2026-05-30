@@ -1,0 +1,40 @@
+{
+  "dataProductName": "asset_workorder_360",
+  "displayName": "Asset & Work Order 360",
+  "domain": "Operations / Maintenance / Production",
+  "owner": "Business Analytics & Operational Insights",
+  "steward": "Operational Data Governance Representative",
+  "classification": "Operationally critical / Internal sensitive",
+  "containsPersonalData": false,
+  "accessModel": "Role-based access via Entra ID groups",
+  "lineage": [
+    "Asset Registry -> Curated SQL Model",
+    "SAP PM / Work Orders -> Curated SQL Model",
+    "Production Context -> Curated SQL Model",
+    "Curated SQL Model -> Semantic Model / KPI Layer",
+    "Semantic Model -> Dashboards / Analytics / AI Maintenance Copilot"
+  ],
+  "approvedUses": [
+    "Maintenance prioritisation",
+    "Operational decision support",
+    "AI-assisted work-order triage",
+    "Management reporting"
+  ],
+  "restrictedUses": [
+    "Autonomous field execution without human validation",
+    "Export to unmanaged locations",
+    "Use outside approved operational context"
+  ],
+  "qualityControls": [
+    "Completeness checks",
+    "Duplicate work-order detection",
+    "Status consistency checks",
+    "Backlog reconciliation",
+    "Refresh monitoring"
+  ],
+  "aiReadiness": {
+    "meaning": "Shared asset, work-order and downtime definitions",
+    "trust": "Lineage, access control, and quality controls documented",
+    "recommendedConfidenceHandling": "AI outputs should display provenance and confidence when recommending prioritisation"
+  }
+}
