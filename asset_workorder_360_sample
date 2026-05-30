@@ -1,0 +1,4 @@
+asset_id,asset_name,asset_class,installation_name,criticality_level,work_order_id,work_order_type,priority_code,status_code,planned_start_date,planned_end_date,actual_end_date,backlog_flag,risk_score,production_date,production_impact_flag,deferred_production_boe,uptime_pct,maintenance_attention_category
+A1001,Compressor A,Rotating Equipment,North Sea Platform 1,HIGH,WO90001,Corrective,P1,OPEN,2026-05-25,2026-05-28,,1,0.91,2026-05-29,1,1200,94.2,PRIORITISE
+A1002,Pump B,Rotating Equipment,North Sea Platform 1,MEDIUM,WO90002,Preventive,P3,OPEN,2026-05-29,2026-06-04,,0,0.34,2026-05-29,0,0,98.7,MONITOR
+A1003,Valve C,Static Equipment,North Sea Platform 2,VERY_HIGH,WO90003,Inspection,P2,DEFERRED,2026-05-20,2026-05-23,,1,0.82,2026-05-29,1,450,96.1,PRIORITISE
