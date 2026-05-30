@@ -1,0 +1,41 @@
+# Business Glossary
+
+- **Asset**: A physical equipment item or operational component registered in the asset hierarchy.
+- **Work Order**: A maintenance instruction or task tracked through the maintenance system.
+- **Backlog Flag**: Indicator showing that a work order remains unresolved past expected execution timing.
+- **Criticality Level**: Business-defined severity of asset importance for safety, production, or reliability.
+- **Deferred Production**: Estimated lost or delayed production associated with maintenance or asset constraints.
+- **Maintenance Attention Category**: Derived category used for prioritisation in reporting and AI-supported triage.
+
+# Architecture Overview
+
+## Logical flow
+
+1. **Source systems** provide asset, maintenance, and production context.
+2. A **SQL curated layer** standardises asset hierarchy, status values, and operational KPIs.
+3. A **semantic model** exposes governed business definitions for consumers.
+4. Dashboards, analysts, and an **AI maintenance copilot** consume the same trusted layer.
+
+## Source systems
+
+- **Asset Registry** – asset hierarchy, class, installation, criticality
+- **SAP PM / Work Orders** – work order type, status, planning, backlog, risk
+- **Production Context** – deferred production, uptime, production impact
+- **Condition / Sensor Signals** – supporting signal layer for prioritisation
+
+## Why this matters for AI
+
+AI consumers are highly sensitive to inconsistent definitions and low-trust data.
+This design reduces failure risk by making ownership, lineage, quality and usage constraints explicit.
+
+# Personal Contribution (Representative)
+
+This demo is intended to reflect the kind of hands-on contribution I bring in real projects:
+
+- Structuring the data product from source systems to governed consumer layer
+- Defining grain, keys, semantic meaning, and consumer-facing field documentation
+- Designing SQL transformation logic and reusable KPI definitions
+- Thinking through governance needs such as classification, access model, quality rules and lineage
+- Framing data for trustworthy AI consumption rather than only traditional reporting
+
+While the content here is synthetic and anonymised, it mirrors my practical experience in data modelling, Power BI semantic design, governed access principles, and business-facing analytics.
